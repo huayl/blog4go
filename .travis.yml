@@ -21,7 +21,7 @@ env:
         - GIMME_OS=linux GIMME_ARCH=amd64
 
 script:
-        - $HOME/gopath/bin/goveralls -repotoken NI9fnGqoyN7iSNCLiAtwphZGIuw54bX5E
+        - $HOME/gopath/bin/goveralls
         - test -z "$(go fmt ./...)"
         - test -z "$(go vet ./...)"
         - test -z "$(golint)"
